@@ -41,6 +41,13 @@ p {
     font-weight: 300;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .underline {
     height: 4px;
     width: 56px;
@@ -52,6 +59,10 @@ p {
 
 .title {
     margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .icon {
@@ -104,6 +115,7 @@ section {
     background-color: #3a86ff;
     flex-direction: column;
     width: 100%;
+    height: 172px;
     padding: 64px 0;
 }
 
@@ -176,6 +188,7 @@ svg {
     justify-content: center;
     align-items: center;
     flex: 1;
+    flex-wrap: wrap;
 }
 
 .technology {
@@ -197,15 +210,8 @@ svg {
 /*   Portfolio   */
 
 #portfolio {
-    padding: 96px 0;
     flex-direction: column;
-}
-
-#portfolio .title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
 }
 
 #portfolio .showcase {
@@ -215,28 +221,76 @@ svg {
 
 .portfolioentry {
     position: relative;
-    margin: 32px;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.portfolioentry:hover {
+    cursor: pointer;
 }
 
 .portfolioentry h4 {
     font-weight: bold;
-    font-size: 3em;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 6em;
     position: absolute;
-    top: 280px;
-    left: 40px;
+    top: 95px;
     margin: 0;
+    align-self: flex-start;
+    padding-left: 15%;
 }
 
-.portfolioentry h5 {
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    font-size: 1.5em;
-    position: absolute;
-    color: #3a86ff;
-    top: 340px;
-    left: 60px;
-    margin: 0;
+#oprecox {
+    width: 100%;
+    background-color: #FFCA72;
+    -webkit-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
 }
+
+.image {
+    margin-right: 5%;
+    height:300px;
+    width: 900px;
+}
+
+#oprecox .image {
+    background-image:url('assets/bannerOPrecoX.jpg')
+}
+
+#feupstudents {
+    width: 100%;
+    background-color: #DCD3CC;
+}
+
+#feupstudents .image {
+    background-image:url('assets/bannerFeupStudents.jpg')
+}
+
+.portfoliounderline {
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: 175px;
+    margin-left: 15%;
+    align-self: flex-start;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+#oprecox .portfoliounderline {
+    width: 449px;
+}
+
+#feupstudents .portfoliounderline {
+    width: 663px;
+}
+
+/*   footer   */
 
 #footer {
     padding: 96px 0;
@@ -261,8 +315,4 @@ svg {
 
 #footer .title {
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
