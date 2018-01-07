@@ -110,24 +110,24 @@ section {
     height: 3em;
     width: 15em;
     border-radius: 1.5em;
-    background-color: #34f6f2;
+    background-color: #75dddd;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Ubuntu', sans-serif;
-    color: white;
+    color: #ffffff;
     font-size: 1em;
-    -webkit-box-shadow: 1px 1px 7px 1px rgba(52,246,242,0.55);
-    -moz-box-shadow: 1px 1px 7px 1px rgba(52,246,242,0.55);
-    box-shadow: 1px 1px 7px 1px rgba(52,246,242,0.55);
+    -webkit-box-shadow: 1px 1px 7px 1px rgba(117,221,221,0.55);
+    -moz-box-shadow: 1px 1px 7px 1px rgba(117,221,221,0.55);
+    box-shadow: 1px 1px 7px 1px rgba(117,221,221,0.55);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .button:hover {
     cursor: pointer;
-    -webkit-box-shadow: 0px 0px 7px 5px rgba(52,246,242,0.58);
-    -moz-box-shadow: 0px 0px 7px 5px rgba(52,246,242,0.58);
-    box-shadow: 0px 0px 7px 5px rgba(52,246,242,0.58);
+    -webkit-box-shadow: 0px 0px 7px 5px rgba(117,221,221,0.58);
+    -moz-box-shadow: 0px 0px 7px 5px rgba(117,221,221,0.58);
+    box-shadow: 0px 0px 7px 5px rgba(117,221,221,0.58);
 }
 
 /*   Skills   */
