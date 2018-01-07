@@ -73,6 +73,16 @@ section {
     height: 100vh;
     background-color: black;
     color: white;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#introduction h1 {
+    position: absolute;
+    margin-left: 50%;
+    left: -313px;
+    margin-top: 50vh;
+    top: -111px;
 }
 
 /*   About Me   */
