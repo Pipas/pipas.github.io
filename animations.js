@@ -8,7 +8,7 @@ function showUnderline(element)
     {
         if (element.childNodes[i].className === "portfoliounderline")
         {
-            TweenMax.set(element.childNodes[i], {transformOrigin:"0% 100%"});
+            TweenMax.set(element.childNodes[i], {transformOrigin:"0% 100%", scaleX:0});
             TweenMax.to(element.childNodes[i], 0.5, {ease: Power4.easeInOut, scaleX:1});
         }
     }
@@ -20,7 +20,7 @@ function hideUnderline(element)
     {
         if (element.childNodes[i].className === "portfoliounderline")
         {
-            TweenMax.set(element.childNodes[i], {transformOrigin:"100% 0%"});
+            TweenMax.set(element.childNodes[i], {transformOrigin:"100% 0%", scaleX:1});
             TweenMax.to(element.childNodes[i], 0.5, {ease: Power4.easeInOut, scaleX:0});
         }
     }
@@ -35,4 +35,9 @@ function shrink(element)
 {
     TweenMax.set(element, {scale:1});
     TweenMax.from(element, 0.5, {ease: Power4.easeInOut, scale:1.2});
+}
+
+function scrollToBottom()
+{
+    TweenMax.to(window, 2, {ease: Power4.easeOut, scrollTo:"#footer"});
 }

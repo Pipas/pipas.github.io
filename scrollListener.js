@@ -75,7 +75,6 @@ function checkTitle()
             typingAnimation.destroy();
             typingAnimation = null;
             document.getElementById("introType").innerHTML = "I'm a Web Developer.";
-            console.log("destroyed");
         }
     }
 }
