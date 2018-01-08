@@ -65,10 +65,10 @@ let typingAnimation = new TypeIt('#introType', {
     .delete()
     .type('I\'m a Web Developer.');
 
-function checkTitle()
-{
-    var canvas = document.getElementById("introType");
-    if(!isVisibleInViewport(canvas))
+let controller = new ScrollMagic.Controller();
+
+new ScrollMagic.Scene({triggerElement:"#introType", triggerHook:"onLeave", offset:80})
+    .on('start', function ()
     {
         if(typingAnimation)
         {
@@ -76,21 +76,6 @@ function checkTitle()
             typingAnimation = null;
             document.getElementById("introType").innerHTML = "I'm a Web Developer.";
         }
-    }
-}
+    })
+    .addTo(controller);
 
-function isVisibleInViewport(elem)
-{
-    var y = elem.offsetTop;
-    var height = elem.offsetHeight;
-
-    while ( elem = elem.offsetParent )
-        y += elem.offsetTop;
-
-    var maxHeight = y + height;
-    var isVisible = ( y < ( window.pageYOffset + window.innerHeight ) ) && ( maxHeight >= window.pageYOffset );
-    return isVisible;
-
-}
-
-window.addEventListener("scroll", checkTitle, false);
