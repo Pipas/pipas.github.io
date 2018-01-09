@@ -40,6 +40,7 @@ h4 {
 p {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
+    font-size: 1.2em;
 }
 
 .center {
@@ -53,7 +54,7 @@ p {
     position: absolute;
     height: 16px;
     bottom: 2px;
-    left: -2px;
+    left: -6px;
     background-color: #3a86ff;
     -ms-transform: skewX(-20deg);
     -webkit-transform: skewX(-20deg);
@@ -105,7 +106,7 @@ section {
 #about {
     padding: 96px 0;
     flex-direction: row;
-    max-width: 900px;
+    max-width: 1100px;
 }
 
 #about > div {
@@ -113,6 +114,9 @@ section {
     flex: 1;
 }
 
+#about .textarea {
+    text-align: justify;
+}
 /*   Available   */
 
 #available {
