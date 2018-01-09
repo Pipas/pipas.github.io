@@ -69,6 +69,19 @@ for (let element of titleElements)
         .addTo(controller);
 }
 
+let el = document.getElementById("arrow");
+let tl = new TimelineMax();
+tl.to(el, 1.5, {ease: Power1.easeInOut, y:10, repeatDelay:0, repeat:-1, yoyo:true})
+tl.play();
+
+new ScrollMagic.Scene({triggerElement:el})
+    .on('start', function ()
+    {
+        tl.kill();
+        TweenMax.to(el, 1, {alpha:0});
+    })
+    .addTo(controller);
+
 function animateScrollTo(id)
 {
     TweenMax.to(window, 2, {ease: Power4.easeOut, scrollTo:id});

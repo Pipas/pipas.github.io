@@ -102,6 +102,19 @@ section {
     top: -111px;
 }
 
+#introduction svg {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    left: -28px;
+    margin-left: 50%;
+    bottom: 56px;
+}
+
+#introduction svg:hover {
+    cursor: pointer;
+}
+
 /*   About Me   */
 
 #about {
@@ -115,7 +128,7 @@ section {
     flex: 1;
 }
 
-#about .textarea {
+#about .textarea p {
     text-align: justify;
 }
 /*   Available   */
