@@ -24,7 +24,7 @@ h2 {
 }
 
 h3 {
-    margin: 0;
+    margin: 0 0 8px 0;
     font-family: 'Lato', sans-serif;
     font-style: italic;
     font-weight: normal;
@@ -41,6 +41,7 @@ p {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 1.2em;
+    margin: 8px 0;
 }
 
 .center {
