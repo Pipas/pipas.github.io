@@ -56,7 +56,12 @@ for (let element of titleElements)
 
     TweenMax.set(underline, {transformOrigin:"0% 100%", scaleX:0});
 
-    new ScrollMagic.Scene({triggerElement:underline, triggerHook:0.6})
+    let hook = 0.6;
+
+    if(title.innerHTML === "Contacts")
+        hook = 0.8;
+
+    new ScrollMagic.Scene({triggerElement:underline, triggerHook:hook})
         .on('start', function ()
         {
             TweenMax.to(underline, 0.5, {ease: Power4.easeInOut, scaleX:1});
