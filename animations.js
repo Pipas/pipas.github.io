@@ -1,3 +1,5 @@
+let controller = new ScrollMagic.Controller();
+
 let portfolioEntries = document.getElementsByClassName("portfolioentry");
 for (let entry of portfolioEntries)
 {
@@ -58,7 +60,7 @@ for (let element of titleElements)
 
     let hook = 0.6;
 
-    if(title.innerHTML === "Contacts")
+    if(title.innerHTML.includes("Conta"))
         hook = 0.8;
 
     new ScrollMagic.Scene({triggerElement:underline, triggerHook:hook})
@@ -70,14 +72,11 @@ for (let element of titleElements)
 }
 
 let el = document.getElementById("arrow");
-let tl = new TimelineMax();
-tl.to(el, 1.5, {ease: Power1.easeInOut, y:10, repeatDelay:0, repeat:-1, yoyo:true})
-tl.play();
+TweenMax.to(el, 1.5, {ease: Power1.easeInOut, y:10, repeatDelay:0, repeat:-1, yoyo:true});
 
 new ScrollMagic.Scene({triggerElement:el})
     .on('start', function ()
     {
-        tl.kill();
         TweenMax.to(el, 1, {alpha:0});
     })
     .addTo(controller);
@@ -86,3 +85,4 @@ function animateScrollTo(id)
 {
     TweenMax.to(window, 2, {ease: Power4.easeOut, scrollTo:id});
 }
+
