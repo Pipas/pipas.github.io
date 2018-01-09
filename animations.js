@@ -56,7 +56,7 @@ for (let element of titleElements)
 
     TweenMax.set(underline, {transformOrigin:"0% 100%", scaleX:0});
 
-    new ScrollMagic.Scene({triggerElement:underline, triggerHook:0.75})
+    new ScrollMagic.Scene({triggerElement:underline, triggerHook:0.6})
         .on('start', function ()
         {
             TweenMax.to(underline, 0.5, {ease: Power4.easeInOut, scaleX:1});
