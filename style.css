@@ -268,8 +268,8 @@ svg {
 #oprecox {
     width: 100%;
     background-color: #FFCA72;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    /*-webkit-filter: grayscale(100%);*/
+    /*filter: grayscale(100%);*/
 }
 
 .image {
