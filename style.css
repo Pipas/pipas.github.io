@@ -77,6 +77,12 @@ p {
     align-items: center;
 }
 
+.icon img {
+  height: 400px;
+  width: 400px;
+  border-radius: 200px;
+}
+
 section {
     display: flex;
     align-items: center;
@@ -263,6 +269,8 @@ svg {
     margin: 0;
     align-self: flex-start;
     padding-left: 15%;
+    text-decoration: none;
+    color: #000;
 }
 
 #oprecox {
@@ -279,7 +287,7 @@ svg {
 }
 
 #oprecox .image {
-    background-image:url('assets/bannerOPrecoX.png')
+    background-image:url('assets/bannerOPrecoX.png');
 }
 
 #feupstudents {
@@ -288,7 +296,19 @@ svg {
 }
 
 #feupstudents .image {
-    background-image:url('assets/bannerFeupStudents.png')
+  background-image:url('assets/bannerFeupStudents.png');
+}
+
+#onemanband {
+    width: 100%;
+    background-color: #DCD3CC;
+}
+
+#onemanband .image {
+    background-image:url('assets/bannerOneManBand.jpg');
+    margin-right: 0;
+    width: 100%;
+    background-size: 100%;
 }
 
 .portfoliounderline {
@@ -308,6 +328,10 @@ svg {
 }
 
 #feupstudents .portfoliounderline {
+    width: 663px;
+}
+
+#onemanband .portfoliounderline {
     width: 663px;
 }
 
@@ -347,4 +371,9 @@ svg {
 
 #footer a {
     color: white;
+}
+
+#footer .source a{
+  color: #1c1c1c;
+  text-decoration: underline;
 }
