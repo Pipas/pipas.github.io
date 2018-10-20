@@ -311,6 +311,10 @@ svg {
     background-size: 100%;
 }
 
+#onemanband h4 {
+  color: #b7b4b4;
+}
+
 .portfoliounderline {
     height: 20px;
     background-color: white;
