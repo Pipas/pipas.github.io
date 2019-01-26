@@ -20,6 +20,7 @@ for (let entry of portfolioEntries) {
 }
 
 let expandableElements = document.getElementsByClassName('expandable')
+
 for (let element of expandableElements) {
   element.onmouseenter = function () {
     TweenMax.to(element, 0.5, { ease: Power4.easeInOut, scale: 1.2 })
@@ -32,6 +33,7 @@ for (let element of expandableElements) {
 }
 
 let titleElements = document.getElementsByClassName('title')
+
 for (let element of titleElements) {
   let title = null; let underline = null
   for (let child of element.childNodes) {

@@ -96,16 +96,12 @@ section {
     height: 100vh;
     background-color: black;
     color: white;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 
 #introduction h1 {
-    position: absolute;
-    margin-left: 50%;
-    left: -313px;
-    margin-top: 50vh;
-    top: -111px;
+    width: 90%;
 }
 
 #introduction svg {
@@ -137,6 +133,7 @@ section {
 #about .textarea p {
     text-align: justify;
 }
+
 /*   Available   */
 
 #available {
@@ -224,7 +221,7 @@ svg {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 16px;
+    margin: 8px 16px;
 }
 
 .technology h4 {
@@ -274,16 +271,15 @@ svg {
 }
 
 #oprecox {
-    width: 100%;
     background-color: #FFCA72;
-    /*-webkit-filter: grayscale(100%);*/
-    /*filter: grayscale(100%);*/
 }
 
 .image {
     margin-right: 10%;
     height:300px;
     width: 600px;
+    background-repeat: no-repeat;
+    background-position: center right;
 }
 
 #oprecox .image {
@@ -291,7 +287,6 @@ svg {
 }
 
 #feupstudents {
-    width: 100%;
     background-color: #DCD3CC;
 }
 
@@ -299,16 +294,24 @@ svg {
   background-image:url('assets/bannerFeupStudents.png');
 }
 
+#routinego {
+  background-color: #3c78d8;
+}
+
+#routinego .image {
+  background-image:url('assets/bannerRoutineGo.png');
+}
+
 #onemanband {
     width: 100%;
-    background-color: #DCD3CC;
+    background-color: #18041d;
 }
 
 #onemanband .image {
     background-image:url('assets/bannerOneManBand.jpg');
+    background-size: 100%;
     margin-right: 0;
     width: 100%;
-    background-size: 100%;
 }
 
 #onemanband h4 {
@@ -337,6 +340,10 @@ svg {
 
 #onemanband .portfoliounderline {
     width: 663px;
+}
+
+#routinego .portfoliounderline {
+    width: 500px;
 }
 
 /*   footer   */
@@ -380,4 +387,73 @@ svg {
 #footer .source a{
   color: #1c1c1c;
   text-decoration: underline;
+}
+
+@media (min-width: 320px) and (max-width: 1000px) {
+
+  #introduction h1 {
+    font-size: 8vw;
+  }
+  
+  section#about {
+    flex-direction: column;
+    padding: 48px 0;
+  }
+
+  .icon img {
+    width: 90%;
+    height: 90%;
+    border-radius: 600px;
+    margin-bottom: 48px;
+  }
+
+  section#available {
+    height: auto;
+  }
+
+  section#available h3 {
+    margin: 12px 48px;
+    text-align: center;
+  }
+
+  section#available h3.bigh {
+    font-size: 2em;
+    margin-bottom: 48px;
+  }
+
+  section#skills {
+    padding: 0 0 48px 0;
+  }
+
+  section#skills .header p {
+    margin: 24px 24px 0 24px;
+    text-align: center;
+  }
+
+  section#skills .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 48px 0;
+  }
+
+  section#portfolio .image {
+    height: 15vh;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .portfolioentry {
+    justify-content: center;
+  }
+
+  .portfolioentry h4 {
+    font-size: 8vw;
+    top: auto;
+    padding-left: 0;
+  }
+
+  .portfoliounderline {
+    display: none;
+  }
 }
