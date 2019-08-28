@@ -21,6 +21,10 @@ body {
   align-items: center;
 }
 
+#introduction br {
+  display: none;
+}
+
 h1.title {
   font-size: 64px;
   font-family: 'Gilroy';
@@ -194,6 +198,7 @@ h2.title.underline::after {
   display: grid;
   grid-template-columns: 100px 100px 100px 100px;
   margin-right: 32px;
+  row-gap: 12px;
 }
 
 .skill {
@@ -227,7 +232,7 @@ h2.title.underline::after {
 
 .glide {
   width: 100%;
-  min-width: 2356px;
+  min-width: 2748px;
   height: 448px;
   margin-top: 32px;
 }
@@ -235,7 +240,6 @@ h2.title.underline::after {
 .glide__slide {
   position: relative;
   border-radius: 16px;
-  padding: 64px 32px;
   box-sizing: border-box;
   background-color: grey;
   overflow: hidden;
@@ -245,6 +249,10 @@ h2.title.underline::after {
 .glide__slide a {
   text-decoration: none;
   color: #000000;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 56px 32px;
 }
 
 .glide__slide:hover {
@@ -379,6 +387,113 @@ h2.title.underline::after {
   align-items: center;
   justify-content: center;
 }
+
+@media only screen and (max-width: 1028px) {
+  #introduction {
+    padding: 0 128px;
+  }
+
+  #introduction br {
+    display: block;
+  }
+
+  .two-columns {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2.title {
+    margin-bottom: 0;
+  }
+
+  .two-columns > * {
+    margin-top: 48px;
+  }
+
+  .glide {
+    margin-top: 48px;
+  }
+
+  section {
+    padding: 64px;
+  }
+
+  .photo {
+    margin-left: 0;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill , minmax(100px, 1fr));
+    margin-right: 0;
+    width: 100%;
+  }
+
+  #portfolio {
+    padding: 64px 0;
+  }
+
+  #portfolio .inner {
+    max-width: 1028px;
+    padding: 0 64px;
+    box-sizing: border-box;
+  }
+
+  #footer > .inner {
+    flex-direction: column;
+  }
+
+  #footer h3 {
+    margin-bottom: 64px;
+  }
+}
+
+@media only screen and (max-width: 678px) {
+  #introduction {
+    padding: 0 32px;
+  }
+
+  h1.title {
+    font-size: 48px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  h2.title {
+    font-size: 36px;
+  }
+
+  .photo {
+    width: 100%;
+    height: auto;
+  }
+
+  .contacts {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .contact-button {
+    margin-left: 0;
+  }
+
+  .contact-button img {
+    height: 48px;
+    width: 48px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+
 
 /* Project specific */
 
