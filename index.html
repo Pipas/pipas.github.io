@@ -6,12 +6,17 @@
       name="google-site-verification"
       content="YlP3vWAGr2lsGqmdIJf_U3wGMfrp9md_ldUKG2MDlko"
     />
+
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
     <title>Paulo Correia</title>
-    <link href="index.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-    <link href="glide/glide.core.min.css" rel="stylesheet" />
-    <script src="glide/glide.min.js"></script>
+
+    <link href="styles/global.css" rel="stylesheet" />
+    <link href="styles/style.css" rel="stylesheet" />
+    <link href="styles/glide.core.min.css" rel="stylesheet" />
+
+    <script src="scripts/glide.min.js"></script>
+    <script src="scripts/ScrollMagic.min.js"></script>
   </head>
   <body>
     <section id="introduction">
@@ -47,7 +52,7 @@
               <a href="#">here</a>.
             </p>
           </div>
-          <img class="photo" src="assets/me.jpeg" alt="Paulo Correia" />
+          <img class="photo" src="images/me.jpeg" alt="Paulo Correia" />
         </div>
       </div>
     </section>
@@ -57,39 +62,39 @@
         <div class="two-columns">
           <div class="skills-grid">
             <div class="skill">
-              <img src="assets/technologies/javascript.svg" />
+              <img src="images/technologies/javascript.svg" />
               <p>Javascript</p>
             </div>
             <div class="skill">
-              <img src="assets/technologies/css.svg" />
+              <img src="images/technologies/css.svg" />
               <p>CSS</p>
             </div>
             <div class="skill">
-              <img src="assets/technologies/php.svg" />
+              <img src="images/technologies/php.svg" />
               <p>PHP</p>
             </div>
             <div class="skill">
-              <img src="assets/technologies/react.svg" />
+              <img src="images/technologies/react.svg" />
               <p>React</p>
             </div>
             <div class="skill">
-              <img src="assets/technologies/python.svg" />
+              <img src="images/technologies/python.svg" />
               <p>Python</p>
             </div>
             <div class="skill">
-              <img src="assets/technologies/c.svg" />
+              <img src="images/technologies/c.svg" />
               <p>C/C++</p>
             </div>
             <div class="skill">
-              <img src="assets/technologies/csharp.svg" />
+              <img src="images/technologies/csharp.svg" />
               <p>C#</p>
             </div>
             <div class="skill">
-              <img src="assets/technologies/android.svg" />
+              <img src="images/technologies/android.svg" />
               <p>Android</p>
             </div>
             <div class="skill">
-              <img src="assets/technologies/java.svg" />
+              <img src="images/technologies/java.svg" />
               <p>Java</p>
             </div>
           </div>
@@ -129,8 +134,8 @@
                 <div class="built-with">
                   built with
                   <div class="technology-icons">
-                    <img src="assets/technologies/android.svg" />
-                    <img src="assets/technologies/java.svg" />
+                    <img src="images/technologies/android.svg" />
+                    <img src="images/technologies/java.svg" />
                   </div>
                 </div>
               </a>
@@ -144,8 +149,8 @@
                 <div class="built-with">
                   built with
                   <div class="technology-icons">
-                    <img src="assets/technologies/android.svg" />
-                    <img src="assets/technologies/java.svg" />
+                    <img src="images/technologies/android.svg" />
+                    <img src="images/technologies/java.svg" />
                   </div>
                 </div>
               </a>
@@ -160,8 +165,8 @@
                 <div class="built-with">
                   built with
                   <div class="technology-icons">
-                    <img src="assets/technologies/javascript.svg" />
-                    <img src="assets/technologies/react.svg" />
+                    <img src="images/technologies/javascript.svg" />
+                    <img src="images/technologies/react.svg" />
                   </div>
                 </div>
               </a>
@@ -170,16 +175,19 @@
         </div>
       </div>
     </section>
-    <section id="footer"></section>
+    <section id="footer">
+      <div class="inner">
+        <h3>You can find me around online.</h3>
+        <div class="contacts">
+          <a href="mailto:paulo.renato.a.correia@gmail.com" class="contact-button"><img src="images/technologies/email.svg" alt="email"></a>
+          <a href="https://github.com/pipas" class="contact-button"><img src="images/technologies/github.svg" alt="github"></a>
+          <a href="https://www.instagram.com/pipas.png" class="contact-button"><img src="images/technologies/instagram.svg" alt="instagram"></a>
+          <a href="https://www.linkedin.com/in/pipas/" class="contact-button"><img src="images/technologies/linkedin.svg" alt="linkedin"></a>
+        </div>
+      </div>
+    </section>
   </body>
 
-  <script>
-    new Glide('.glide', {
-      type: 'carousel',
-      startAt: 0,
-      perView: 6,
-      gap: 48,
-      autoplay: 5000
-    }).mount()
-  </script>
+  <script src="scripts/main.js"></script>
+
 </html>
