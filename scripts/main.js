@@ -3,7 +3,7 @@ new Glide('.glide', {
   startAt: 0,
   perView: 7,
   gap: 48,
-  autoplay: 3000
+  autoplay: 8000
 }).mount()
 
 let controller = new ScrollMagic.Controller();
