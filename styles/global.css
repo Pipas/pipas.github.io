@@ -164,3 +164,10 @@ a {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Abula';
+  src: url('../fonts/Abula.woff2') format('woff2'),
+      url('../fonts/Abula.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
