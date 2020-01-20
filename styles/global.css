@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -161,13 +165,5 @@ a {
   src: url('../fonts/Gilroy-Bold.woff2') format('woff2'),
       url('../fonts/Gilroy-Bold.woff') format('woff');
   font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Abula';
-  src: url('../fonts/Abula.woff2') format('woff2'),
-      url('../fonts/Abula.woff') format('woff');
-  font-weight: normal;
   font-style: normal;
 }

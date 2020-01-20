@@ -19,6 +19,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 #introduction br {
@@ -36,6 +37,24 @@ h1.title {
   margin: 14px 0 0 6px;
   font-size: 32px;
   font-family: 'Gilroy';
+}
+
+.down-arrow {
+  position: absolute;
+  bottom: 32px;
+  animation: appear 1s ease-in-out, arrow 2s ease-in infinite;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.down-arrow:hover {
+  cursor: pointer;
+}
+
+.down-arrow svg {
+  height: 48px;
+  width: 48px;
 }
 
 /* Introduction animations */
@@ -102,6 +121,18 @@ h1.title {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(12px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
@@ -478,6 +509,11 @@ h2.title.underline::after {
     font-size: 48px;
   }
 
+  .down-arrow svg {
+    height: 32px;
+    width: 32px;
+  }
+
   .subtitle {
     font-size: 20px;
   }
@@ -554,30 +590,10 @@ h2.title.underline::after {
   background-image: url(../images/OneManBand.png);
 }
 
-.one-man-band a {
+.inverted a {
   color: #ffffff;
 }
 
-.one-man-band .built-with img {
-  filter: brightness(0) invert(1);
-}
-
-.falta-de-educacao {
-  background-color:#3d72de;
-}
-
-.falta-de-educacao h3 {
-  color: white;
-  font-family: 'Abula';
-  font-size: 56px;
-  font-weight: normal;
-  line-height: 32px;
-}
-
-.falta-de-educacao a {
-  color: #ffffff;
-}
-
-.falta-de-educacao .built-with img {
+.inverted .built-with img {
   filter: brightness(0) invert(1);
 }
