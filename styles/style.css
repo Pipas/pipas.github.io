@@ -1,5 +1,5 @@
 /* Imports */
-@import url('https://fonts.googleapis.com/css?family=Inconsolata|Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap');
 
 /* Body */
 
@@ -31,6 +31,7 @@ h1.title {
   font-family: 'Gilroy';
   font-weight: bold;
   margin-bottom: 8px;
+  letter-spacing: -1px;
 }
 
 .subtitle {
@@ -43,7 +44,7 @@ h1.title {
   position: absolute;
   bottom: 32px;
   animation: appear 1s ease-in-out, arrow 2s ease-in infinite;
-  animation-delay: 6s;
+  animation-delay: 8s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -168,17 +169,20 @@ section > .inner {
 }
 
 h3 {
-  font-family: 'Inconsolata', monospace;
-  font-size: 24px;
-  margin-bottom: 8px;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  margin-bottom: 16px;
 }
 
 p {
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Cabin', sans-serif;
   font-size: 20px;
+  font-weight: 400;
   color: #818999;
-  line-height: 24px;
+  line-height: 28px;
   text-decoration: none;
+  margin-bottom: 8px;
 }
 
 a {
@@ -198,17 +202,18 @@ h2.title {
 
 h2.title::after {
   position: absolute;
-  bottom: -8px;
-  left: 0;
+  bottom: 1px;
+  z-index: -1;
+  left: -2px;
   content: '';
   width: 0;
-  height: 4px;
+  height: 10px;
   background: #818999;
   transition: all 0.5s cubic-bezier(.25,.8,.25,1);
 }
 
 h2.title.underline::after {
-  width: 80%;
+  width: 102%;
 }
 
 .description {
@@ -244,6 +249,8 @@ h2.title.underline::after {
 .skill > p {
   color: #ffffff;
   margin-top: 8px;
+  line-height: 24px;
+  text-align: center;
 }
 
 .skill img {
@@ -316,7 +323,7 @@ h2.title.underline::after {
 }
 
 .glide__slide p {
-  font-family: 'Lato';
+  font-family: 'Cabin', sans-serif;
   color: inherit;
   opacity: 0;
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -333,7 +340,7 @@ h2.title.underline::after {
   position: absolute;
   bottom: 0;
   right: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Cabin', sans-serif;
   font-size: 16px;
   margin: 16px;
 }
@@ -588,6 +595,14 @@ h2.title.underline::after {
 
 .one-man-band:before {
   background-image: url(../images/OneManBand.png);
+}
+
+.tis-100 {
+  background-color: #000000;
+}
+
+.tis-100:before {
+  background-image: url(../images/TIS100.png);
 }
 
 .inverted a {
