@@ -423,6 +423,10 @@ h2.title.underline::after {
   margin-left: 32px;
 }
 
+.contact-button:first-child {
+  margin-left: 0;
+}
+
 #footer.animate .contact-button {
   animation-name: appear;
   animation-duration: 1s;
@@ -475,7 +479,7 @@ h2.title.underline::after {
   }
 
   section {
-    padding: 64px;
+    padding: 32px;
   }
 
   .photo {
@@ -504,6 +508,7 @@ h2.title.underline::after {
 
   #footer h3 {
     margin-bottom: 64px;
+    text-align: center;
   }
 }
 
@@ -536,11 +541,10 @@ h2.title.underline::after {
 
   .contacts {
     justify-content: space-between;
-    width: 100%;
   }
 
   .contact-button {
-    margin-left: 0;
+    margin-left: 16px;
   }
 
   .contact-button img {
@@ -548,8 +552,12 @@ h2.title.underline::after {
     width: 48px;
   }
 
+  #footer h3 {
+    font-size: 24px;
+  }
+
   h3 {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   p {
@@ -603,6 +611,14 @@ h2.title.underline::after {
 
 .tis-100:before {
   background-image: url(../images/TIS100.png);
+}
+
+.dissertation {
+  background-color: #ffffff;
+}
+
+.dissertation:before {
+  background-image: url(../images/dissertation.png);
 }
 
 .inverted a {
